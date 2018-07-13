@@ -4,9 +4,9 @@
   "description": "Theran Brigowatz React Boilerplate",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build-server && npm run build-client",
-    "build-server": "babel src/server --out-dir ./dist",
-    "build-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "build-babel": "npm run build-bable-server && npm run build-babel-client",
+    "build-babel-server": "babel src/server --out-dir ./dist",
+    "build-babel-client": "babel src/client --copy-files --out-dir ./dist/public",
     "start": "node ./dist/index.js",
     "test": "jest ./src"
   },
@@ -25,11 +25,14 @@
   },
   "homepage": "https://github.com/theranbrig/react-boilerplate#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "jest": "^23.4.0"
   }
 }
